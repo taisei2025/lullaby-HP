@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lulluby Inc.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="./output.css" rel="stylesheet">
+
+</head>
+<body class="text-taupe">
+  <nav id="mainNav" class="fixed top-0 left-0 bg-isabelline shadow-md w-full z-50" style="transform: translateY(-100%); will-change: transform;">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex items-center">
+            <a href="index.html">
+              <img src="./img/logo.svg" alt="LullubyInc. Logo" class="h-14 rounded-full object-contain" />
+            </a>
+          </div>
+          
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="profile.html" class="nav-link text-battleship font-bold hover:text-taupe transition">私たちについて</a>
+                <a href="service.html" class="nav-link text-battleship font-bold hover:text-taupe transition">サービス</a>
+                <a href="contact.html" class="nav-link text-battleship font-bold hover:text-taupe transition">問い合わせ</a>
+                <a href="career.html" class="nav-link text-battleship font-bold hover:text-taupe transition">採用情報</a>
+            </div>
+            <div class="md:hidden flex items-center">
+              <button class="mobile-menu-button" aria-label="Toggle menu">
+                <svg class="hamburger-icon w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <svg class="close-icon w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu md:hidden bg-isabelline shadow-lg pt-20 fixed inset-x-0 top-0 z-40" 
+ style="transform: translateY(-100%); opacity: 0; pointer-events: none;">
+    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <a href="profile.html" class="block px-3 py-2 rounded-md text-base font-bold text-battleship hover:bg-silver hover:text-isabelline">私たちについて</a>
+        <a href="service.html" class="block px-3 py-2 rounded-md text-base font-bold text-battleship hover:bg-silver hover:text-isabelline">サービス</a>
+        <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-bold text-battleship hover:bg-silver hover:text-isabelline">問い合わせ</a>
+        <a href="career.html" class="block px-3 py-2 rounded-md text-base font-bold text-battleship hover:bg-silver hover:text-isabelline">採用情報</a>
+    </div>
+</div>
+
+
+<section id="about-us" class="py-20 mt-10 bg-isabelline">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+      
+      <!-- Left: Heading and Description -->
+      <div class="space-y-6">
+        <h2 class="text-4xl font-bold text-taupe">私たちについて</h2>
+        <p class="text-cerulean text-lg">
+          About Us
+        </p>
+      </div>
+
+      <!-- Right: Responsive Link Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-taupe">
+        <a href="#mission-vision" class="text-lg font-medium hover:underline py-2 transition-colors duration-200">ミッション</a>
+        <a href="#mission-vision" class="text-lg font-medium hover:underline py-2 transition-colors duration-200">ビジョン</a>
+        <a href="#values" class="text-lg font-medium hover:underline py-2 transition-colors duration-200">バリュー</a>
+        <a href="#message" class="text-lg font-medium hover:underline py-2 transition-colors duration-200">代表メッセージ</a>
+        <a href="#profile" class="text-lg font-medium hover:underline py-2 transition-colors duration-200">会社概要</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+   <!-- Hero Image Section -->
+<section class="h-[60vh] bg-[#DDF5C4] flex items-center justify-center">
+    <img 
+    src="./img//image 15.svg" 
+    alt="Hero Image" 
+    class="w-[80%] md:w-[60%] lg:w-[80%] max-h-full object-contain" 
+  />
+</section>
+
+      
+
+    <!-- Company Section -->
+    <section id="mission-vision" class="py-20 bg-isabelline relative overflow-hidden">
+      <div class="absolute top-20 left-10 z-0 rotate-[-20deg] opacity-40">
+        <svg width="80" height="80" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="text-cerulean">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+        </svg>
+      </div>
+      
+      <!-- Squiggle bottom-right -->
+      <div class="absolute bottom-20 right-10 z-0 opacity-40 rotate-[15deg]">
+        <svg width="100" height="40" viewBox="0 0 100 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 20 C20 0, 40 40, 60 20 C80 0, 100 40, 120 20" stroke="currentColor" class="text-cerulean" stroke-width="4" fill="none"/>
+        </svg>
+      </div>
+      
+      <!-- Dotted Circle -->
+      <div class="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 z-0 opacity-40">
+        <svg width="140" height="140" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="70" cy="70" r="68" stroke="currentColor" class="text-cerulean" stroke-dasharray="6 10" stroke-width="2"/>
+        </svg>
+      </div>
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="grid md:grid-cols-2 gap-16 animate-on-scroll slide-up">
+            <!-- Mission -->
+            <div id="mission" class="space-y-6">
+              <p class="uppercase text-sm font-semibold text-cerulean tracking-wide">Mission</p>
+              <h3 class="text-3xl font-bold text-taupe">セールスから感動を生み出す</h3>
+              <p class="text-battleship text-lg leading-relaxed">
+                私たちは、セールスの変革こそが世界を豊かにすると<br>信じています。<br>
+"顧客の心を動かし、感動を生み出す"<br>そんなセールスの在り方に貢献します。
+              </p>
+            </div>
+      
+            <!-- Vision -->
+            <div id="vision" class="space-y-6">
+              <p class="uppercase text-sm font-semibold text-cerulean tracking-wide">Vision</p>
+              <h3 class="text-3xl font-bold text-taupe">未踏の達成が叶う社会へ</h3>
+              <p class="text-battleship text-lg leading-relaxed">挑戦するすべての個人と組織が、<br>過去最高を更新し続ける社会の実現を目指します。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="values" class="py-20 bg-isabelline relative overflow-hidden">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-left mb-16 animate-on-scroll slide-up">
+            <h2 class="text-sm uppercase text-cerulean font-semibold tracking-wide mb-2">Values</h2>
+          </div>
+      
+          <div class="animate-on-scroll slide-up divide-y divide-silver/0">
+            <!-- Value 1 -->
+            <div class="grid md:grid-cols-2 gap-8 items-center py-8">
+              <div class="flex items-center gap-5">
+                <div class="text-2xl font-bold text-cerulean">01</div>
+                <h4 class="text-2xl font-bold text-taupe mb-0">自由と責任</h4>
+              </div>
+              <div>
+                <p class="text-taupe">
+                 自律が信頼を生み、信頼が裁量を育てる。<br>私たちは最大限の自由と責任を持ち、未踏を達成する。</p>
+              </div>
+            </div>
+      
+            <!-- Value 2 -->
+            <div class="grid md:grid-cols-2 gap-8 items-start py-8">
+              <div class="flex items-center gap-5">
+                <div class="text-2xl font-bold text-cerulean">02</div>
+                <h4 class="text-2xl font-bold text-taupe mb-0">全方良し</h4>
+              </div>
+              <div>
+                <p class="text-taupe">私たちは関わるすべての存在が満足する選択と行動を取り続ける。</p>
+              </div>
+            </div>
+      
+            <!-- Value 3 -->
+            <div class="grid md:grid-cols-2 gap-8 items-start py-8">
+              <div class="flex items-center gap-5">
+                <div class="text-2xl font-bold text-cerulean">03</div>
+                <h4 class="text-2xl font-bold text-taupe mb-0">プロフェッショナルたれ</h4>
+              </div>
+              <div>
+                <p class="text-taupe">結果にこだわり、技術と誠実さで信頼を築く。<br>最も必要とされる存在を目指し、期待を超え続ける。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="h-[60vh] bg-[#EBEEFF] flex items-center justify-center">
+    <img 
+    src="./img/image 9.svg" 
+    alt="Hero Image" 
+    class="w-[80%] md:w-[60%] lg:w-[80%] max-h-full object-contain" 
+  />
+</section>
+
+<section id="message" class="py-20 bg-isabelline relative overflow-hidden">
+  <div class="absolute top-20 left-10 z-0 rotate-[-20deg] opacity-40">
+    <svg width="80" height="80" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="text-cerulean">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+    </svg>
+  </div>
+  
+  <!-- Squiggle bottom-right -->
+  <div class="absolute bottom-20 right-10 z-0 opacity-40 rotate-[15deg]">
+    <svg width="100" height="40" viewBox="0 0 100 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 20 C20 0, 40 40, 60 20 C80 0, 100 40, 120 20" stroke="currentColor" class="text-cerulean" stroke-width="4" fill="none"/>
+    </svg>
+  </div>
+  
+  <!-- Dotted Circle -->
+  <div class="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 z-0 opacity-40">
+    <svg width="140" height="140" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="70" cy="70" r="68" stroke="currentColor" class="text-cerulean" stroke-dasharray="6 10" stroke-width="2"/>
+    </svg>
+  </div>
+  <!-- Decorative Blur Circles -->
+  
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 animate-on-scroll slide-up relative z-10">
+    <div class="text-center mb-10">
+      <h2 class="text-sm uppercase text-cerulean font-semibold tracking-wide mb-2">Message</h2>
+    </div>
+
+    <div class="flex flex-col lg:flex-row gap-8 lg:gap-16">
+      
+      <!-- Text block -->
+      <div class="w-full lg:w-[70%] text-battleship leading-loose space-y-6">
+        <p class="leading-loose text-black/70">
+          企業や日本経済の成長の鍵は"セールス"だと考えています。<br>
+時代とともにセールスの在り方や手法は変化しても、"顧客の心を動かす"という本質は変わらないように思います。<br>
+私たちは最新のテクノロジーを最大限に活用し、"セールスから感動を生み出す"というミッションを体現し、関わる全てのステークホルダーの未踏の達成に貢献します。<br>
+50年、100年先のセールスの未来を創りあげる役割を担います。<br>
+志高く。
+        </p>
+      </div>
+
+      <!-- Portrait & name block -->
+      <div class="flex flex-col items-center text-center">
+        <div class="w-[200px] h-[280px] lg:w-[220px] lg:h-[320px] rounded-2xl overflow-hidden shadow-md mb-4 bg-white flex items-center justify-center">
+          <img src="./img/profile.jpeg" alt="CEO Portrait" class="w-full h-full object-fill" />
+        </div>
+        <div>
+          <p class="text-lg font-semibold text-taupe">代表取締役 CEO</p>
+          <p class="text-lg font-bold text-taupe">坂口 大晟</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+      
+     
+      <!-- Company Profile Section -->
+
+
+      <section id="profile" class="py-24 bg-isabelline relative overflow-hidden mt-20">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16 animate-on-scroll">
+            <h2 class="text-4xl font-bold text-black mb-4 tracking-tight">会社概要 </h2>
+            <p class="text-lg font-bold text-cerulean">Company</p>
+
+          </div>
+      
+          <dl class="space-y-1">
+            <!-- Row Template -->
+            <div class="flex flex-col md:flex-row gap-0 animate-on-scroll">
+              <!-- Heading -->
+              <dt class="md:w-1/3  px-6 py-5 rounded-l-lg flex items-center font-medium text-black/60">
+                <!-- Icon -->
+                <!-- Replace or reuse as needed -->
+                
+                <span>会社名</span>
+              </dt>
+              <!-- Info -->
+              <dd class="md:w-2/3 bg-white px-6 py-5 rounded-r-lg text-black border-b border-silver/10">lullaby株式会社</dd>
+            </div>
+      
+            <!-- Repeat the same structure for each item below -->
+      
+            <!-- 資本金 -->
+            <div class="flex flex-col md:flex-row gap-0 animate-on-scroll">
+              <dt class="md:w-1/3  px-6 py-5 rounded-l-lg flex items-center space-x-2 font-medium text-black/60">
+                
+                <span>資本金</span>
+              </dt>
+              <dd class="md:w-2/3 bg-white px-6 py-5 rounded-r-lg text-black border-b border-silver/10">20,010,000（資本準備金含む）</dd>
+            </div>
+      
+            <!-- 代表取締役 -->
+            <div class="flex flex-col md:flex-row gap-0 animate-on-scroll">
+              <dt class="md:w-1/3  px-6 py-5 rounded-l-lg flex items-center space-x-2 font-medium text-black/60">
+                
+                <span>代表取締役</span>
+              </dt>
+              <dd class="md:w-2/3 bg-white px-6 py-5 rounded-r-lg text-black border-b border-silver/10">坂口 大晟</dd>
+            </div>
+      
+            <!-- 設立日 -->
+            <div class="flex flex-col md:flex-row gap-0 animate-on-scroll">
+              <dt class="md:w-1/3  px-6 py-5 rounded-l-lg flex items-center space-x-2 font-medium text-black/60">
+                
+                <span>設立日</span>
+              </dt>
+              <dd class="md:w-2/3 bg-white px-6 py-5 rounded-r-lg text-black border-b border-silver/10">2024年 6月 3日</dd>
+            </div>
+      
+            <!-- 所在地 (with map) -->
+            <div class="flex flex-col md:flex-row gap-0 animate-on-scroll">
+              <dt class="md:w-1/3  px-6 py-5 rounded-l-lg flex items-center space-x-2 font-medium text-black/60">
+                
+                <span>所在地</span>
+              </dt>
+              <dd class="md:w-2/3 bg-white px-6 py-5 rounded-r-lg text-black leading-relaxed border-b border-silver/10">
+                〒103-0025<br>
+                東京都中央区日本橋茅場町1-8-1<br>
+                茅場町一丁目平和ビル <br>
+                <div class="map-container rounded-xl mt-2 overflow-hidden">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1620.4360715040455!2d139.7775186389106!3d35.68015009314687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018895a3080e385%3A0xa64b209938fe4f43!2z44CSMTAzLTAwMjUgVG9reW8sIENodW8gQ2l0eSwgTmlob25iYXNoaWtheWFiYWNoxY0sIDEtY2jFjW1l4oiSOOKIkjEg6IyF5aC055S65LiA5LiB55uu5bmz5ZKM44OT44Or!5e0!3m2!1sen!2sjp!4v1748836442376!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+                </div>
+              </dd>
+            </div>
+      
+            <!--  事業許可書-->
+
+            <div class="flex flex-col md:flex-row gap-0 animate-on-scroll">
+              <dt class="md:w-1/3  px-6 py-5 rounded-l-lg flex items-center space-x-2 font-medium text-black/60">
+                
+                <span>事業許可書</span>
+              </dt>
+              <dd class="md:w-2/3 bg-white px-6 py-5 rounded-r-lg text-black leading-relaxed border-b border-silver/10">
+                有料職業紹介（厚生労働大臣許可番号13-ユ-317459）<br>
+                労働者派遣（厚生労働大臣許可番号派13-317675）
+              </dd>
+            </div>
+
+            <!--  事業内容-->
+            <div class="flex flex-col md:flex-row gap-0 animate-on-scroll">
+              <dt class="md:w-1/3  px-6 py-5 rounded-l-lg flex items-center space-x-2 font-medium text-black/60">
+                
+                <span>事業内容</span>
+              </dt>
+              <dd class="md:w-2/3 bg-white px-6 py-5 rounded-r-lg text-black leading-relaxed border-b border-silver/10">
+                <p>・自社SaaSプロダクト開発</p>
+                <p>・インサイドセールスコンサルティング・BPO</p>
+                <p>・業界特化型の転職・採用支援サービスの提供</p>
+              </dd>
+            </div>
+
+          </dl>
+        </div>
+      </section>
+      
+
+
+      
+
+    <!-- Footer -->
+    <footer class="bg-taupe text-isabelline py-12 relative overflow-hidden">
+      <div class="abstract-shape shape-1" style="width: 200px; height: 200px; bottom: -100px; right: -100px;"></div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div class="grid md:grid-cols-4 gap-8 mb-8">
+            <div class="flex items-center">
+              <a href="index.html">
+                <img src="./img/logo.svg" alt="LullubyInc. Logo" class="h-full rounded-full object-contain" />
+              </a>
+            </div>
+              <div>
+                  <h4 class="font-semibold mb-4">サービス</h4>
+                  <ul class="space-y-2">
+                      <li><a href="#" class="text-melon hover:text-cerulean transition">SaaS</a></li>
+                      <li><a href="#" class="text-melon hover:text-cerulean transition">セールス BPO</a></li>
+                      <li><a href="#" class="text-melon hover:text-cerulean transition">セールスコンサルティング</a></li>
+                  </ul>
+              </div>
+              <div>
+                  <h4 class="font-semibold mb-4">会社概要</h4>
+                  <ul class="space-y-2">
+                      <li><a href="profile.html" class="text-melon hover:text-cerulean transition">私たちについて</a></li>
+                      <li><a href="service.html" class="text-melon hover:text-cerulean transition">サービス</a></li>
+                      <li><a href="contact.html" class="text-melon hover:text-cerulean transition">問い合わせ</a></li>
+                      <li><a href="career.html" class="text-melon hover:text-cerulean transition">採用情報</a></li>
+                  </ul>
+              </div>
+              <div>
+                  <ul class="space-y-2">
+                      <li><a href="profile.html#mission" class="text-melon hover:text-cerulean transition">ミッション</a></li>
+                      <li><a href="profile.html#vision" class="text-melon hover:text-cerulean transition">ビジョン</a></li>
+                      <li><a href="profile.html#values" class="text-melon hover:text-cerulean transition">バリュー</a></li>
+
+                  </ul>
+              </div>
+          </div>
+          <div class="pt-8 border-t border-isabelline">
+              <div class="md:flex md:items-center md:justify-between">
+                  <p class="text-melon text-sm">© 2025 LullubyInc. All rights reserved.</p>
+                  <!-- <div class="flex space-x-6 mt-4 md:mt-0">
+                      <a href="#" class="text-melon hover:text-cerulean transition"><i class="fab fa-linkedin-in"></i></a>
+                      <a href="#" class="text-melon hover:text-cerulean transition"><i class="fab fa-twitter"></i></a>
+                      <a href="#" class="text-melon hover:text-cerulean transition"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#" class="text-melon hover:text-cerulean transition"><i class="fab fa-instagram"></i></a>
+                  </div> -->
+              </div>
+          </div>
+      </div>
+  </footer>
+    <script src="./script.js"></script>
+    <script src="./header.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+</body>
+</html>

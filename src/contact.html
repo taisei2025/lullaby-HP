@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lulluby Inc.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="./output.css" rel="stylesheet">
+
+</head>
+<body class="text-taupe">
+  <nav id="mainNav" class="fixed top-0 left-0 bg-isabelline shadow-md w-full z-50" style="transform: translateY(-100%); will-change: transform;">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex items-center">
+            <a href="index.html">
+              <img src="./img/logo.svg" alt="LullubyInc. Logo" class="h-14 rounded-full object-contain" />
+            </a>
+          </div>
+          
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="profile.html" class="nav-link text-battleship font-bold hover:text-taupe transition">私たちについて</a>
+                <a href="service.html" class="nav-link text-battleship font-bold hover:text-taupe transition">サービス</a>
+                <a href="contact.html" class="nav-link text-battleship font-bold hover:text-taupe transition">問い合わせ</a>
+                <a href="career.html" class="nav-link text-battleship font-bold hover:text-taupe transition">採用情報</a>
+            </div>
+            <div class="md:hidden flex items-center">
+              <button class="mobile-menu-button" aria-label="Toggle menu">
+                <svg class="hamburger-icon w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <svg class="close-icon w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu md:hidden bg-isabelline shadow-lg pt-20 fixed inset-x-0 top-0 z-40" 
+ style="transform: translateY(-100%); opacity: 0; pointer-events: none;">
+    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <a href="profile.html" class="block px-3 py-2 rounded-md text-base font-medium text-battleship hover:bg-silver hover:text-isabelline">私たちについて</a>
+        <a href="service.html" class="block px-3 py-2 rounded-md text-base font-medium text-battleship hover:bg-silver hover:text-isabelline">サービス</a>
+        <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-battleship hover:bg-silver hover:text-isabelline">問い合わせ</a>
+        <a href="career.html" class="block px-3 py-2 rounded-md text-base font-medium text-battleship hover:bg-silver hover:text-isabelline">採用情報</a>
+    </div>
+</div>
+
+<section id="about-us" class="py-20 mt-10 bg-isabelline">
+  <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="space-y-6 text-center">
+
+      <div class="text-center mb-24 mt-10" data-aos="fade-up">
+        <h1 class="text-5xl font-bold text-taupe mb-4">お問い合わせ</h1>
+        <p class="text-cerulean text-lg font-bold max-w-2xl mx-auto">
+          Contact
+        </p>
+      </div>
+      <div>
+        <p class="text-battleship max-w-md mx-auto">
+          お気軽にお問い合わせください。2~3日以内に担当者よりお電話もしくはメールにてご連絡いたします。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+      
+
+
+<section class="min-h-screen bg-isabelline pb-24 px-4 lg:px-8 flex justify-center items-center">
+  <form id="contactForm" class="bg-isabelline p-10 rounded-2xl shadow-md max-w-3xl w-full space-y-6 text-isabelline">
+    <h2 class="text-3xl font-bold mb-6 text-center text-taupe">お問い合わせ</h2>
+
+    <!-- Step 1: Input Fields -->
+    <div id="formStep1" class="space-y-6">
+      <!-- Reusable Input Fields -->
+      <div class="flex flex-col md:flex-row items-start md:items-center gap-4">
+        <label class="md:w-1/3 text-taupe font-semibold">会社名<span class="text-red ml-1">*</span></label>
+        <input type="text" name="company" class="form-input" placeholder="例: lulluby,inc." required />
+      </div>
+      <div class="flex flex-col md:flex-row items-start text-taupe md:items-center gap-4">
+        <label class="md:w-1/3 font-semibold">部署<span class="text-red ml-1">*</span></label>
+        <input type="text" name="department" class="form-input" placeholder="例：営業部 " required />
+      </div>
+      <div class="flex flex-col md:flex-row items-start text-taupe md:items-center gap-4">
+        <label class="md:w-1/3 font-semibold">役職<span class="text-red ml-1">*</span></label>
+        <input type="text" name="name" class="form-input" placeholder="例：営業マネージャー" required />
+      </div>
+      <div class="flex flex-col md:flex-row items-start text-taupe md:items-center gap-4">
+        <label class="md:w-1/3 font-semibold">お名前<span class="text-red ml-1">*</span></label>
+        <input type="text" name="name" class="form-input" placeholder="例: 坂口大晟" required />
+      </div>
+      
+      <div class="flex flex-col md:flex-row items-start text-taupe md:items-center gap-4">
+        <label class="md:w-1/3 font-semibold">ふりがな<span class="text-red ml-1">*</span></label>
+        <input type="text" name="furigana" class="form-input" placeholder="例: さかぐち たいせい" required />
+      </div>
+      <div class="flex flex-col md:flex-row items-start text-taupe md:items-center gap-4">
+        <label class="md:w-1/3 font-semibold">メールアドレス<span class="text-red ml-1">*</span></label>
+        <input type="email" name="email" class="form-input" placeholder="例: example@lullaby.co.jp" required />
+      </div>
+      <div class="flex flex-col md:flex-row items-start text-taupe md:items-center gap-4">
+        <label class="md:w-1/3 font-semibold">電話番号<span class="text-red ml-1">*</span></label>
+        <input type="text" name="phone" class="form-input" placeholder="例: 00012345678" required />
+      </div>
+      <div class="flex flex-col md:flex-row items-start text-taupe md:items-start gap-4">
+        <label class="md:w-1/3 font-semibold pt-2">お問い合わせ内容<span class="text-red ml-1">*</span></label>
+        <textarea name="message" rows="4" class="form-input" required></textarea>
+      </div>
+      <div class="flex items-start gap-3">
+        <input type="checkbox" name="agree" class="accent-melon mt-1" required />
+        <label class="text-sm text-taupe"><a href="privacy-policy.html" class="underline">プライバシーポリシー</a>に同意します<span class="text-red  ml-1">*</span></label>
+      </div>      
+      <div class="text-center pt-4">
+        <button type="button" onclick="showConfirmation(event)" class="bg-silver text-melon font-semibold px-8 py-3 rounded-full hover:bg-silver/90 transition">
+          確認画面へ
+        </button>
+      </div>
+    </div>
+
+    <!-- Step 2: Confirmation -->
+    <div id="formStep2" class="hidden space-y-6">
+      <div id="confirmationFields" class="space-y-3 text-taupe"></div>
+      <div class="text-center flex gap-4 justify-center">
+        <button type="button" onclick="editForm()" class="px-6 py-2 rounded-full border border-taupe  text-taupe hover:bg-isabelline/10">
+          戻って修正する
+        </button>
+        <button type="submit" class="bg-silver text-isabelline font-semibold px-8 py-3 rounded-full hover:bg-silver/90 transition">
+          送信する
+        </button>
+      </div>
+    </div>
+  </form>
+</section>
+      
+
+    <!-- Footer -->
+    <footer class="bg-taupe text-isabelline py-12 relative overflow-hidden">
+      <div class="abstract-shape shape-1" style="width: 200px; height: 200px; bottom: -100px; right: -100px;"></div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div class="grid md:grid-cols-4 gap-8 mb-8">
+            <div class="flex items-center">
+              <a href="index.html">
+                <img src="./img/logo.svg" alt="LullubyInc. Logo" class="h-full rounded-full object-contain" />
+              </a>
+            </div>
+              <div>
+                  <h4 class="font-semibold mb-4">サービス</h4>
+                  <ul class="space-y-2">
+                      <li><a href="#" class="text-melon hover:text-cerulean transition">SaaS</a></li>
+                      <li><a href="#" class="text-melon hover:text-cerulean transition">セールス BPO</a></li>
+                      <li><a href="#" class="text-melon hover:text-cerulean transition">セールスコンサルティング</a></li>
+                  </ul>
+              </div>
+              <div>
+                  <h4 class="font-semibold mb-4">会社概要</h4>
+                  <ul class="space-y-2">
+                      <li><a href="profile.html" class="text-melon hover:text-cerulean transition">私たちについて</a></li>
+                      <li><a href="service.html" class="text-melon hover:text-cerulean transition">サービス</a></li>
+                      <li><a href="contact.html" class="text-melon hover:text-cerulean transition">問い合わせ</a></li>
+                      <li><a href="career.html" class="text-melon hover:text-cerulean transition">採用情報</a></li>
+                  </ul>
+              </div>
+              <div>
+                  <ul class="space-y-2">
+                      <li><a href="profile.html#mission" class="text-melon hover:text-cerulean transition">ミッション</a></li>
+                      <li><a href="profile.html#vision" class="text-melon hover:text-cerulean transition">ビジョン</a></li>
+                      <li><a href="profile.html#values" class="text-melon hover:text-cerulean transition">バリュー</a></li>
+
+                  </ul>
+              </div>
+          </div>
+          <div class="pt-8 border-t border-isabelline">
+              <div class="md:flex md:items-center md:justify-between">
+                  <p class="text-melon text-sm">© 2025 LullubyInc. All rights reserved.</p>
+                  <!-- <div class="flex space-x-6 mt-4 md:mt-0">
+                      <a href="#" class="text-melon hover:text-cerulean transition"><i class="fab fa-linkedin-in"></i></a>
+                      <a href="#" class="text-melon hover:text-cerulean transition"><i class="fab fa-twitter"></i></a>
+                      <a href="#" class="text-melon hover:text-cerulean transition"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#" class="text-melon hover:text-cerulean transition"><i class="fab fa-instagram"></i></a>
+                  </div> -->
+              </div>
+          </div>
+      </div>
+  </footer>
+    <script src="./script.js"></script>
+    <script src="./header.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script>
+      function showConfirmation(event) {
+        event.preventDefault(); // Prevent actual form submission
+    
+        const form = document.getElementById('contactForm');
+    
+        // ✅ Check form validity
+        if (!form.checkValidity()) {
+          form.reportValidity(); // Show native validation messages
+          return; // Do not proceed to confirmation
+        }
+    
+        const step1 = document.getElementById('formStep1');
+        const step2 = document.getElementById('formStep2');
+        const confirmArea = document.getElementById('confirmationFields');
+    
+        const formData = new FormData(form);
+        let html = '';
+        for (const [key, value] of formData.entries()) {
+          if (key === 'agree') continue;
+          const labelMap = {
+            company: '会社名',
+            department: '部署・役職',
+            name: 'お名前',
+            furigana: 'ふりがな',
+            email: 'メールアドレス',
+            phone: '電話番号',
+            message: 'お問い合わせ内容'
+          };
+          html += `<div><strong>${labelMap[key] || key}:</strong><br>${value}</div>`;
+        }
+    
+        confirmArea.innerHTML = html;
+        step1.classList.add('hidden');
+        step2.classList.remove('hidden');
+      }
+    
+      function editForm() {
+        document.getElementById('formStep2').classList.add('hidden');
+        document.getElementById('formStep1').classList.remove('hidden');
+      }
+    </script>
+    
+</body>
+</html>
