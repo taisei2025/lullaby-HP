@@ -31,8 +31,9 @@
     <link rel="icon" type="image/png" href="./img/favicon.png">
     <link rel="apple-touch-icon" href="./img/logo.svg">
     <link rel="shortcut icon" href="./img/favicon.png">
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
+
 <body class="text-taupe">
   <nav id="mainNav" class="fixed top-0 left-0 bg-isabelline shadow-md w-full z-50" style="transform: translateY(-100%); will-change: transform;">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -73,7 +74,7 @@
     </div>
 </div>
 
-<section id="about-us" class="py-20 mt-10 bg-isabelline">
+<section id="header-section" class="py-20 mt-10 bg-isabelline">
   <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="space-y-6 text-center">
 
@@ -93,8 +94,7 @@
 </section>
       
 
-
-<section class="min-h-screen bg-isabelline pb-24 px-4 lg:px-8 flex justify-center items-center">
+<section id="contact-form-section" class="min-h-screen bg-isabelline pb-24 px-4 lg:px-8 flex justify-center items-center">
   <form id="contactForm" class="bg-isabelline p-10 rounded-2xl shadow-md max-w-3xl w-full space-y-6 text-isabelline">
     <h2 class="text-3xl font-bold mb-6 text-center text-taupe">お問い合わせ</h2>
 
@@ -111,7 +111,7 @@
       </div>
       <div class="flex flex-col md:flex-row items-start text-taupe md:items-center gap-4">
         <label class="md:w-1/3 font-semibold">役職<span class="text-red ml-1">*</span></label>
-        <input type="text" name="name" class="form-input" placeholder="例：営業マネージャー" required />
+        <input type="text" name="title" class="form-input" placeholder="例：営業マネージャー" required />
       </div>
       <div class="flex flex-col md:flex-row items-start text-taupe md:items-center gap-4">
         <label class="md:w-1/3 font-semibold">お名前<span class="text-red ml-1">*</span></label>
@@ -135,11 +135,11 @@
         <textarea name="message" rows="4" class="form-input" required></textarea>
       </div>
       <div class="flex items-start gap-3">
-        <input type="checkbox" name="agree" class="accent-melon mt-1" required />
+        <input type="checkbox" name="agree" class="accent-melon mt-1 w-4 h-4" required />
         <label class="text-sm text-taupe"><a href="privacy-policy.html" class="underline">プライバシーポリシー</a>に同意します<span class="text-red  ml-1">*</span></label>
       </div>      
       <div class="text-center pt-4">
-        <button type="button" onclick="showConfirmation(event)" class="bg-silver text-melon font-semibold px-8 py-3 rounded-full hover:bg-silver/90 transition">
+        <button type="button" onclick="showConfirmation(event)" class="bg-silver text-melon font-semibold px-8 py-3 rounded-full hover:bg-silver/90 hover:scale-105 hover:shadow-lg transition-all duration-300 transform">
           確認画面へ
         </button>
       </div>
@@ -149,10 +149,10 @@
     <div id="formStep2" class="hidden space-y-6">
       <div id="confirmationFields" class="space-y-3 text-taupe"></div>
       <div class="text-center flex gap-4 justify-center">
-        <button type="button" onclick="editForm()" class="px-6 py-2 rounded-full border border-taupe  text-taupe hover:bg-isabelline/10">
+        <button type="button" onclick="editForm()" class="px-6 py-2 rounded-full border border-taupe text-taupe hover:bg-isabelline/10 hover:scale-105 hover:shadow-lg transition-all duration-300 transform">
           戻って修正する
         </button>
-        <button type="submit" class="bg-silver text-isabelline font-semibold px-8 py-3 rounded-full hover:bg-silver/90 transition">
+        <button type="submit" class="bg-silver text-isabelline font-semibold px-8 py-3 rounded-full hover:bg-silver/90 hover:scale-105 hover:shadow-lg transition-all duration-300 transform">
           送信する
         </button>
       </div>
@@ -160,6 +160,41 @@
   </form>
 </section>
       
+<!-- 送信完了画面（横幅を広く、ボタンサイズを元に戻し） -->
+<section id="success-page" class="hidden min-h-screen bg-isabelline flex justify-center items-center px-4">
+  <div class="bg-isabelline p-12 rounded-2xl shadow-xl max-w-2xl w-full text-center border border-silver/20">
+    
+    <!-- メインメッセージ -->
+    <h1 class="text-3xl font-bold text-taupe mb-4">送信完了</h1>
+    <p class="text-lg text-cerulean font-semibold mb-8">お問い合わせありがとうございました</p>
+    
+    <!-- 説明文 -->
+    <div class="bg-melon p-6 rounded-xl mb-20">
+      <p class="text-taupe leading-relaxed">
+        お問い合わせを正常に受け付けいたしました。<br>
+        <strong>2〜3営業日以内</strong>に担当者よりご連絡いたします。
+      </p>
+    </div>
+    
+    <!-- ボタン（間隔を広く、サイズは元通り） -->
+    <div class="space-y-6">
+      <button onclick="goHome()" 
+              class="w-full bg-cerulean text-isabelline font-semibold px-8 py-3 rounded-full 
+                     hover:bg-cerulean/90 hover:scale-105 hover:shadow-lg 
+                     transition-all duration-300 transform">
+        ホームページに戻る
+      </button>
+      
+      <button onclick="newInquiry()" 
+              class="w-full border-2 border-silver text-silver font-semibold px-8 py-3 rounded-full 
+                    hover:scale-105 hover:shadow-lg 
+                    transition-all duration-300 transform">
+        新しいお問い合わせ
+      </button>
+    </div>
+    
+  </div>
+</section>
 
     <!-- Footer -->
     <footer class="bg-taupe text-isabelline py-12 relative overflow-hidden">
@@ -235,13 +270,15 @@
           if (key === 'agree') continue;
           const labelMap = {
             company: '会社名',
-            department: '部署・役職',
+            department: '部署',
+            title: '役職',  
             name: 'お名前',
             furigana: 'ふりがな',
             email: 'メールアドレス',
             phone: '電話番号',
             message: 'お問い合わせ内容'
           };
+
           html += `<div><strong>${labelMap[key] || key}:</strong><br>${value}</div>`;
         }
     
@@ -255,6 +292,117 @@
         document.getElementById('formStep1').classList.remove('hidden');
       }
     </script>
-    
+        <!-- Supabaseクライアントを読み込み -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script>
+      // Supabaseの設定（あなたのプロジェクトに書き換えて！）
+      const { createClient } = supabase;
+      const supabaseClient = createClient(
+        'https://olcfxgvjhbvuhmzugjdd.supabase.co', // ✅ あなたの Supabase Project URL
+        'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9sY2Z4Z3ZqaGJ2dWhtenVnamRkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTIyODYyMTEsImV4cCI6MjA2Nzg2MjIxMX0.G85J1Z4j_6-IWP9OIzoHtlGcKaqgqRd-68y5pWCw9Hc'        // ✅ あなたの anon パブリックキー
+      );
+    </script>
+<!-- フォーム送信処理 -->
+    <script>
+      emailjs.init('OKUEZLXX4Gqrxs9gB'); // EmailJSで取得した公開キーに置き換え
+      const form = document.querySelector("form"); // 最初の<form>を取得
+
+      form.addEventListener("submit", async function (e) {
+        e.preventDefault(); // ページのリロードを防ぐ
+
+        const formData = new FormData(form);
+
+        // Supabaseに送るデータまとめ（payload）
+        const payload = {
+          company: formData.get("company"),
+          department: formData.get("department"),
+          title: formData.get("title"),
+          name: formData.get("name"),
+          furigana: formData.get("furigana"),
+          email: formData.get("email"),
+          phone: formData.get("phone"),
+          message: formData.get("message")
+        };
+
+        console.log("📨 Supabase送信データ:", payload);
+
+        const { data, error } = await supabaseClient.from("contacts").insert([payload]);
+
+        if (error) {
+          console.error("❌ Supabase送信エラー:", error);
+          alert("送信に失敗しました。内容を確認してもう一度お試しください。");
+          } else {
+            console.log("✅ Supabase送信成功:", data);
+            
+            // EmailJSでメール送信を追加
+            try {
+              await emailjs.send(
+                'service_br905wd',    // EmailJSで取得したService IDに置き換え
+                'template_qvuu76p',   // EmailJSで取得したTemplate IDに置き換え
+                {
+                  to_email: 'taisei.sakaguchi@lullaby.co.jp', // 受信したいメールアドレス
+                  company: payload.company,
+                  department: payload.department,
+                  title: payload.title,
+                  name: payload.name,
+                  furigana: payload.furigana,
+                  email: payload.email,
+                  phone: payload.phone,
+                  message: payload.message,
+                  sent_date: new Date().toLocaleString('ja-JP')
+                }
+              );
+              
+              console.log('✅ メール送信成功');
+            } catch (emailError) {
+              console.error('❌ メール送信エラー:', emailError);
+            }
+            
+            showSuccessPage(); 
+          }
+      });
+    </script>
+<script>
+  // 送信完了画面を表示する関数
+  function showSuccessPage() {
+      // ヘッダー部分を隠す（「お気軽に...」の文章）
+      document.getElementById('header-section').style.display = 'none';
+      
+      // フォーム部分を隠す
+      document.getElementById('contact-form-section').style.display = 'none';
+      
+      // 完了画面を表示
+      document.getElementById('success-page').classList.remove('hidden');
+      
+      // ページの一番上に戻る
+      window.scrollTo(0, 0);
+  }
+  
+  // ホームページに戻る関数
+  function goHome() {
+      window.location.href = 'index.html';
+  }
+  
+  // 新しいお問い合わせを開始する関数
+  function newInquiry() {
+      // 完了画面を隠す
+      document.getElementById('success-page').classList.add('hidden');
+      
+      // ヘッダー部分を表示
+      document.getElementById('header-section').style.display = 'block';
+      
+      // フォーム部分を表示
+      document.getElementById('contact-form-section').style.display = 'flex';
+      
+      // フォームをリセット
+      document.getElementById('contactForm').reset();
+      document.getElementById('formStep2').classList.add('hidden');
+      document.getElementById('formStep1').classList.remove('hidden');
+      
+      // フォーム部分にスクロール
+      document.getElementById('contact-form-section').scrollIntoView();
+  }
+  </script>
 </body>
 </html>
