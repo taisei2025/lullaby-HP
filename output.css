@@ -891,6 +891,9 @@
   .text-center {
     text-align: center;
   }
+  .text-justify {
+    text-align: justify;
+  }
   .text-left {
     text-align: left;
   }
@@ -994,6 +997,35 @@
   .text-taupe {
     color: var(--color-taupe);
   }
+
+  .number-list {
+    counter-reset: custom;
+    list-style: none;
+    margin-left: 12px;
+  }
+  .number-list li {
+    counter-increment: custom;
+  }
+  .number-list li::before {
+    content: counter(custom) ". ";
+    margin-right: 4px;
+    /* font-weight: bold; */
+  }
+
+  .jp-counter {
+    list-style: none;
+    counter-reset: jp;
+    margin-left: 16px;
+  }
+  .jp-counter li {
+    counter-increment: jp;
+    padding-left: 2px;
+  }
+  .jp-counter li::before {
+    content: "(" counter(jp) ") ";
+    /* font-weight: bold; */
+  }
+
   .uppercase {
     text-transform: uppercase;
   }
